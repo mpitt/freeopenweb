@@ -1,0 +1,203 @@
+body {
+    font-family: 'Gentium Basic', serif;
+}
+
+#impress {
+    z-index: 10;
+}
+
+.step h1 {
+    font-size: 96px;
+    width: 800px;
+    text-align: center;
+    margin: 0;
+}
+
+.step p {
+    text-align: center;
+    margin: 0;
+}
+
+.fallback {
+    display: none;
+    text-align: center;
+    font-size: 32px;
+}
+
+.impress-not-supported .fallback {
+    display: block;
+}
+
+.step {
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+#overview {
+    font-size: 256px;
+    font-weight: bold;
+}
+
+.keyword {
+    font-size: 128px;
+    line-height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    border: 10px solid #333;
+    text-align: center;
+    opacity: 0.1;
+}
+
+.keyword::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #333;
+    height: 10px;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+}
+
+.keyword.active::after {
+    opacity: 0.1;
+}
+
+.impress-on-overview .keyword::after {
+    opacity: 1;
+}
+
+#a::after {
+    width: 220px;
+    top: 32px;
+    left: 250px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+#free::after {
+    width: 133px;
+    top: 224px;
+    left: 292px;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+}
+
+#and::after {
+    width: 187px;
+    top: 48px;
+    left: 261px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+#open::after {
+    width: 107px;
+    top: 215px;
+    left: 291px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+#mouse a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+.impress-on-overview .keyword {
+    opacity: 1;
+}
+
+.game {
+    font-size: 150px;
+}
+
+blockquote.step {
+    width: 800px;
+    font-size: 40px;
+}
+
+blockquote::before {
+    content: "«";
+}
+
+blockquote::after {
+    content: "»";
+}
+
+#href {
+    font-size: 64px;
+    overflow: show;
+}
+
+.impress-on-overview #href {
+    opacity: 0;
+}
+
+#internet h1 {
+    font-size: 64px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+#internet p {
+    font-size: 28px;
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    left: 290px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+}
+
+.step.active #email {
+    -webkit-transform: translate(-100px, -30px) rotate(-25deg);
+    -moz-transform: translate(-100px, -30px) rotate(-25deg);
+}
+
+.step.active #file {
+    -webkit-transform: translate(0px, -120px) rotate(-5deg);
+    -moz-transform: translate(0px, -120px) rotate(-5deg);
+}
+
+.step.active #remote {
+    -webkit-transform: translate(250px, -50px) rotate(35deg);
+    -moz-transform: translate(250px, -50px) rotate(35deg);
+}
+
+.step.active #www {
+    -webkit-transform: translate(0px, 30px) rotate(5deg);
+    -moz-transform: translate(0px, 30px) rotate(5deg);
+}
+
+.impress-on-openness .opens {
+    opacity: 1;
+}
+
+#nav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+#nav a {
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 3px solid #ccc;
+    border-radius: 50px;
+}
